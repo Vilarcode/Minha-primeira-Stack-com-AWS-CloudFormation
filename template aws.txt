@@ -1,0 +1,15 @@
+
+---
+
+## 🧾 template.yaml (salve com esse nome)
+
+```yaml
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Minha primeira Stack AWS CloudFormation - Instância EC2 simples
+
+Resources:
+  MinhaInstanciaEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0c55b159cbfafe1f0  # AMI padrão Amazon Linux 2 na região us-east-1
+      InstanceType: t2.micro
